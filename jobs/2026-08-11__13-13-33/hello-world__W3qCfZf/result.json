@@ -1,0 +1,119 @@
+{
+    "id": "62de5354-10e8-4827-8d36-7f28b64ac159",
+    "task_name": "acme/hello-world",
+    "trial_name": "hello-world__W3qCfZf",
+    "trial_uri": "file:///Users/chris/harbor-custom-agent/jobs/2026-08-11__13-13-33/hello-world__W3qCfZf",
+    "task_id": {
+        "path": "/Users/chris/harbor-custom-agent/hello-world"
+    },
+    "source": null,
+    "task_checksum": "6c0b221bf37798c89a84b8009a6a4d87234ff388048244d6b45dd928ecb8209d",
+    "config": {
+        "task": {
+            "path": "/Users/chris/harbor-custom-agent/hello-world",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "hello-world__W3qCfZf",
+        "trials_dir": "/Users/chris/harbor-custom-agent/jobs/2026-08-11__13-13-33",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "agent:SimpleAgent",
+            "import_path": null,
+            "model_name": null,
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {
+                "model": "qwen3-8b:q4_k",
+                "backend": "cli",
+                "cli_command": "apfel --code -s {system} {instruction}"
+            },
+            "mcp_servers": []
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "job_id": "314b8b1b-a4c3-4510-ae3c-4a0ec49defe6"
+    },
+    "agent_info": {
+        "name": "simple-agent",
+        "version": "0.1.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": {
+            "model": "qwen3-8b:q4_k",
+            "backend": "cli",
+            "command": "echo \"Hello, world!\" > /app/hello.txt",
+            "exit_code": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-08-11T18:13:33.533701Z",
+    "finished_at": "2026-08-11T18:13:57.905743Z",
+    "environment_setup": {
+        "started_at": "2026-08-11T18:13:33.559328Z",
+        "finished_at": "2026-08-11T18:13:34.654539Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-08-11T18:13:34.654612Z",
+        "finished_at": "2026-08-11T18:13:34.654676Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-08-11T18:13:34.654753Z",
+        "finished_at": "2026-08-11T18:13:35.763680Z"
+    },
+    "verifier": {
+        "started_at": "2026-08-11T18:13:35.976333Z",
+        "finished_at": "2026-08-11T18:13:47.383503Z"
+    },
+    "step_results": null
+}

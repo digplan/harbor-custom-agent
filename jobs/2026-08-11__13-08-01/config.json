@@ -1,0 +1,18 @@
+{
+    "job_name": "2026-08-11__13-08-01",
+    "jobs_dir": "/Users/chris/harbor-custom-agent/jobs",
+    "agents": [
+        {
+            "name": "agent:SimpleAgent",
+            "kwargs": {
+                "model": "qwen3-8b:q4_k",
+                "base_url": "http://localhost:11434/v1"
+            }
+        }
+    ],
+    "tasks": [
+        {
+            "path": "/Users/chris/harbor-custom-agent/hello-world"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "jobs_dir": "/Users/chris/harbor-custom-agent/jobs",
+    "agents": [
+        {
+            "name": "agent:SimpleAgent"
+        }
+    ],
+    "tasks": [
+        {
+            "path": "/Users/chris/harbor-custom-agent/hello-world"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 1,
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1786487100.2787206,
+            "stop": 1786487100.3121448
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_hello_file_exists_and_matches",
+                "status": "passed",
+                "duration": 0.00030108398641459644,
+                "start": 1786487100.311577,
+                "stop": 1786487100.312018,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            }
+        ]
+    }
+}

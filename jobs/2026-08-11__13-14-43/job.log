@@ -1,0 +1,4 @@
+Skipping image OS validation for hb__9a62b5c0d6e2de28d19a8ca1d32b759e: docker inspect returned 1
+Trial hello-world__NHbVuBu cancelled
+Collecting main service artifacts
+Cleanup interrupted for hello-world__NHbVuBu, but agent environment stop is shielded and will complete

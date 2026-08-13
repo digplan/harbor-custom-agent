@@ -1,0 +1,25 @@
+Traceback (most recent call last):
+  File "/Users/chris/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py", line 354, in run
+    await self._run()
+  File "/Users/chris/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/single_step.py", line 41, in _run
+    await self._run_agent()
+  File "/Users/chris/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/single_step.py", line 77, in _run_agent
+    await self._run_agent_phase(
+    ...<4 lines>...
+    )
+  File "/Users/chris/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py", line 450, in _run_agent_phase
+    await asyncio.wait_for(
+    ...<6 lines>...
+    )
+  File "/Users/chris/.local/share/uv/python/cpython-3.13.14-macos-aarch64-none/lib/python3.13/asyncio/tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/Users/chris/harbor-custom-agent/agent.py", line 32, in run
+    context.commands_executed = 1
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chris/.local/share/uv/tools/harbor/lib/python3.13/site-packages/pydantic/main.py", line 1048, in __setattr__
+    elif (setattr_handler := self._setattr_handler(name, value)) is not None:
+                             ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/chris/.local/share/uv/tools/harbor/lib/python3.13/site-packages/pydantic/main.py", line 1095, in _setattr_handler
+    raise ValueError(f'"{cls.__name__}" object has no field "{name}"')
+ValueError: "AgentContext" object has no field "commands_executed"

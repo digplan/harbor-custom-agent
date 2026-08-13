@@ -1,0 +1,27 @@
+Traceback (most recent call last):
+  File "/Users/chris/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py", line 354, in run
+    await self._run()
+  File "/Users/chris/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/single_step.py", line 41, in _run
+    await self._run_agent()
+  File "/Users/chris/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/single_step.py", line 77, in _run_agent
+    await self._run_agent_phase(
+    ...<4 lines>...
+    )
+  File "/Users/chris/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py", line 450, in _run_agent_phase
+    await asyncio.wait_for(
+    ...<6 lines>...
+    )
+  File "/Users/chris/.local/share/uv/python/cpython-3.13.14-macos-aarch64-none/lib/python3.13/asyncio/tasks.py", line 507, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/Users/chris/harbor-custom-agent/agent.py", line 112, in run
+    raw = self._ask_model(instruction)
+  File "/Users/chris/harbor-custom-agent/agent.py", line 101, in _ask_model
+    return self._ask_cli(instruction)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/chris/harbor-custom-agent/agent.py", line 82, in _ask_cli
+    command = self.cli_command.format(
+        system=shlex.quote(SYSTEM_PROMPT),
+        instruction=shlex.quote(instruction),
+    )
+ValueError: unexpected '{' in field name

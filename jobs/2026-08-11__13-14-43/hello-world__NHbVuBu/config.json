@@ -1,0 +1,16 @@
+{
+    "task": {
+        "path": "/Users/chris/harbor-custom-agent/hello-world"
+    },
+    "trial_name": "hello-world__NHbVuBu",
+    "trials_dir": "/Users/chris/harbor-custom-agent/jobs/2026-08-11__13-14-43",
+    "agent": {
+        "name": "agent:SimpleAgent",
+        "kwargs": {
+            "model": "qwen3-8b:q4_k",
+            "backend": "http",
+            "base_url": "http://localhost:11434/v1"
+        }
+    },
+    "job_id": "1ea15256-7c27-40cc-8f84-920aa034d6f7"
+}

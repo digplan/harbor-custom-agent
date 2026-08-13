@@ -1,0 +1,112 @@
+{
+    "id": "cc3daeb0-47b7-4d42-81e2-11be4cc1102d",
+    "task_name": "acme/hello-world",
+    "trial_name": "hello-world__NHbVuBu",
+    "trial_uri": "file:///Users/chris/harbor-custom-agent/jobs/2026-08-11__13-14-43/hello-world__NHbVuBu",
+    "task_id": {
+        "path": "/Users/chris/harbor-custom-agent/hello-world"
+    },
+    "source": null,
+    "task_checksum": "6c0b221bf37798c89a84b8009a6a4d87234ff388048244d6b45dd928ecb8209d",
+    "config": {
+        "task": {
+            "path": "/Users/chris/harbor-custom-agent/hello-world",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "hello-world__NHbVuBu",
+        "trials_dir": "/Users/chris/harbor-custom-agent/jobs/2026-08-11__13-14-43",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "agent:SimpleAgent",
+            "import_path": null,
+            "model_name": null,
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {
+                "model": "qwen3-8b:q4_k",
+                "backend": "http",
+                "base_url": "http://localhost:11434/v1"
+            },
+            "mcp_servers": []
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "job_id": "1ea15256-7c27-40cc-8f84-920aa034d6f7"
+    },
+    "agent_info": {
+        "name": "simple-agent",
+        "version": "0.1.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": null,
+    "exception_info": {
+        "exception_type": "CancelledError",
+        "exception_message": "",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/Users/chris/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py\", line 354, in run\n    await self._run()\n  File \"/Users/chris/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/single_step.py\", line 41, in _run\n    await self._run_agent()\n  File \"/Users/chris/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/single_step.py\", line 86, in _run_agent\n    await self._sync_agent_output(self.result)\n  File \"/Users/chris/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py\", line 692, in _sync_agent_output\n    await self._download_agent_logs()\n  File \"/Users/chris/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py\", line 471, in _download_agent_logs\n    await self.agent_environment.prepare_logs_for_host()\n  File \"/Users/chris/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/environments/docker/docker.py\", line 931, in prepare_logs_for_host\n    await self._chown_to_host_user(target, recursive=True)\n  File \"/Users/chris/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/environments/docker/docker.py\", line 1023, in _chown_to_host_user\n    if await self._is_rootless_docker():\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/chris/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/environments/docker/docker.py\", line 992, in _is_rootless_docker\n    proc = await asyncio.create_subprocess_exec(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<6 lines>...\n    )\n    ^\n  File \"/Users/chris/.local/share/uv/python/cpython-3.13.14-macos-aarch64-none/lib/python3.13/asyncio/subprocess.py\", line 224, in create_subprocess_exec\n    transport, protocol = await loop.subprocess_exec(\n                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<3 lines>...\n        stderr=stderr, **kwds)\n        ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/chris/.local/share/uv/python/cpython-3.13.14-macos-aarch64-none/lib/python3.13/asyncio/base_events.py\", line 1812, in subprocess_exec\n    transport = await self._make_subprocess_transport(\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        protocol, popen_args, False, stdin, stdout, stderr,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        bufsize, **kwargs)\n        ^^^^^^^^^^^^^^^^^^\n  File \"/Users/chris/.local/share/uv/python/cpython-3.13.14-macos-aarch64-none/lib/python3.13/asyncio/unix_events.py\", line 221, in _make_subprocess_transport\n    await waiter\nasyncio.exceptions.CancelledError\n",
+        "occurred_at": "2026-08-11T13:14:49.647203"
+    },
+    "started_at": "2026-08-11T18:14:44.223371Z",
+    "finished_at": "2026-08-11T18:14:50.806583Z",
+    "environment_setup": {
+        "started_at": "2026-08-11T18:14:44.252278Z",
+        "finished_at": "2026-08-11T18:14:45.363143Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-08-11T18:14:45.363244Z",
+        "finished_at": "2026-08-11T18:14:45.363319Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-08-11T18:14:45.363429Z",
+        "finished_at": "2026-08-11T18:14:49.641072Z"
+    },
+    "verifier": null,
+    "step_results": null
+}

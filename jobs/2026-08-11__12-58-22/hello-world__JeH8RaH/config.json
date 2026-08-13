@@ -1,0 +1,11 @@
+{
+    "task": {
+        "path": "/Users/chris/harbor-custom-agent/hello-world"
+    },
+    "trial_name": "hello-world__JeH8RaH",
+    "trials_dir": "/Users/chris/harbor-custom-agent/jobs/2026-08-11__12-58-22",
+    "agent": {
+        "name": "agent:SimpleAgent"
+    },
+    "job_id": "7a7b757e-9f5b-463b-8e51-a5b19dea67d6"
+}

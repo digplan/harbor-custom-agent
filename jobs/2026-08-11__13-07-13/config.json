@@ -1,0 +1,15 @@
+{
+    "agents": [
+        {
+            "name": "agent:SimpleAgent",
+            "kwargs": {
+                "model": "qwen3-8b:q4_k"
+            }
+        }
+    ],
+    "tasks": [
+        {
+            "path": "hello-world"
+        }
+    ]
+}

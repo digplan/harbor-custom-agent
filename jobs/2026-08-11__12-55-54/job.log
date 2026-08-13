@@ -1,0 +1,4 @@
+Skipping image OS validation for hb__9a62b5c0d6e2de28d19a8ca1d32b759e: docker inspect returned 1
+Trial hello-world__N7BhSkh failed: "AgentContext" object has no field "commands_executed"
+Collecting main service artifacts
+Not retrying trial because the maximum number of retries has been reached

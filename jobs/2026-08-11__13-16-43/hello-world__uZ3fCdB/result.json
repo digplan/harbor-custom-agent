@@ -1,0 +1,112 @@
+{
+    "id": "32e172d2-e2c1-440c-ae37-bb81753fd1b3",
+    "task_name": "acme/hello-world",
+    "trial_name": "hello-world__uZ3fCdB",
+    "trial_uri": "file:///Users/chris/harbor-custom-agent/jobs/2026-08-11__13-16-43/hello-world__uZ3fCdB",
+    "task_id": {
+        "path": "/Users/chris/harbor-custom-agent/hello-world"
+    },
+    "source": null,
+    "task_checksum": "6c0b221bf37798c89a84b8009a6a4d87234ff388048244d6b45dd928ecb8209d",
+    "config": {
+        "task": {
+            "path": "/Users/chris/harbor-custom-agent/hello-world",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "hello-world__uZ3fCdB",
+        "trials_dir": "/Users/chris/harbor-custom-agent/jobs/2026-08-11__13-16-43",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "agent:SimpleAgent",
+            "import_path": null,
+            "model_name": null,
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {
+                "model": "qwen3-8b:q4_k",
+                "backend": "ollama",
+                "base_url": "http://localhost:11434/v1"
+            },
+            "mcp_servers": []
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "job_id": "be0fb3f9-067a-45f5-aa49-e59d8498e291"
+    },
+    "agent_info": {
+        "name": "simple-agent",
+        "version": "0.1.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": null,
+    "exception_info": {
+        "exception_type": "ValueError",
+        "exception_message": "Unknown backend: ollama",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/Users/chris/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py\", line 354, in run\n    await self._run()\n  File \"/Users/chris/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/single_step.py\", line 41, in _run\n    await self._run_agent()\n  File \"/Users/chris/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/single_step.py\", line 77, in _run_agent\n    await self._run_agent_phase(\n    ...<4 lines>...\n    )\n  File \"/Users/chris/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py\", line 450, in _run_agent_phase\n    await asyncio.wait_for(\n    ...<6 lines>...\n    )\n  File \"/Users/chris/.local/share/uv/python/cpython-3.13.14-macos-aarch64-none/lib/python3.13/asyncio/tasks.py\", line 507, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/Users/chris/harbor-custom-agent/agent.py\", line 112, in run\n    raw = self._ask_model(instruction)\n  File \"/Users/chris/harbor-custom-agent/agent.py\", line 104, in _ask_model\n    raise ValueError(f\"Unknown backend: {self.backend}\")\nValueError: Unknown backend: ollama\n",
+        "occurred_at": "2026-08-11T13:16:45.107834"
+    },
+    "started_at": "2026-08-11T18:16:43.878551Z",
+    "finished_at": "2026-08-11T18:16:55.513712Z",
+    "environment_setup": {
+        "started_at": "2026-08-11T18:16:43.901655Z",
+        "finished_at": "2026-08-11T18:16:44.870385Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-08-11T18:16:44.870457Z",
+        "finished_at": "2026-08-11T18:16:44.870518Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-08-11T18:16:44.870592Z",
+        "finished_at": "2026-08-11T18:16:44.870675Z"
+    },
+    "verifier": null,
+    "step_results": null
+}

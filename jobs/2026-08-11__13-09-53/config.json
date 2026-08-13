@@ -1,0 +1,19 @@
+{
+    "job_name": "2026-08-11__13-09-53",
+    "jobs_dir": "/Users/chris/harbor-custom-agent/jobs",
+    "agents": [
+        {
+            "name": "agent:SimpleAgent",
+            "kwargs": {
+                "model": "qwen3-8b:q4_k",
+                "backend": "cli",
+                "cli_command": "apfel --code -s {system {instruction}}"
+            }
+        }
+    ],
+    "tasks": [
+        {
+            "path": "/Users/chris/harbor-custom-agent/hello-world"
+        }
+    ]
+}

@@ -1,0 +1,108 @@
+{
+    "id": "d35cdcc2-8adf-4774-83a7-d7750d54ec4c",
+    "task_name": "acme/hello-world",
+    "trial_name": "hello-world__N7BhSkh",
+    "trial_uri": "file:///Users/chris/harbor-custom-agent/jobs/2026-08-11__12-55-54/hello-world__N7BhSkh",
+    "task_id": {
+        "path": "hello-world"
+    },
+    "source": null,
+    "task_checksum": "6c0b221bf37798c89a84b8009a6a4d87234ff388048244d6b45dd928ecb8209d",
+    "config": {
+        "task": {
+            "path": "hello-world",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "hello-world__N7BhSkh",
+        "trials_dir": "jobs/2026-08-11__12-55-54",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "agent:SimpleAgent",
+            "import_path": null,
+            "model_name": null,
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "mcp_servers": []
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "job_id": "80e18215-3181-49aa-b790-b56ce04e9269"
+    },
+    "agent_info": {
+        "name": "simple-agent",
+        "version": "0.1.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": null,
+    "exception_info": {
+        "exception_type": "ValueError",
+        "exception_message": "\"AgentContext\" object has no field \"commands_executed\"",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/Users/chris/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py\", line 354, in run\n    await self._run()\n  File \"/Users/chris/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/single_step.py\", line 41, in _run\n    await self._run_agent()\n  File \"/Users/chris/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/single_step.py\", line 77, in _run_agent\n    await self._run_agent_phase(\n    ...<4 lines>...\n    )\n  File \"/Users/chris/.local/share/uv/tools/harbor/lib/python3.13/site-packages/harbor/trial/trial.py\", line 450, in _run_agent_phase\n    await asyncio.wait_for(\n    ...<6 lines>...\n    )\n  File \"/Users/chris/.local/share/uv/python/cpython-3.13.14-macos-aarch64-none/lib/python3.13/asyncio/tasks.py\", line 507, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/Users/chris/harbor-custom-agent/agent.py\", line 32, in run\n    context.commands_executed = 1\n    ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/chris/.local/share/uv/tools/harbor/lib/python3.13/site-packages/pydantic/main.py\", line 1048, in __setattr__\n    elif (setattr_handler := self._setattr_handler(name, value)) is not None:\n                             ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^\n  File \"/Users/chris/.local/share/uv/tools/harbor/lib/python3.13/site-packages/pydantic/main.py\", line 1095, in _setattr_handler\n    raise ValueError(f'\"{cls.__name__}\" object has no field \"{name}\"')\nValueError: \"AgentContext\" object has no field \"commands_executed\"\n",
+        "occurred_at": "2026-08-11T12:56:01.025186"
+    },
+    "started_at": "2026-08-11T17:55:54.251172Z",
+    "finished_at": "2026-08-11T17:56:11.434915Z",
+    "environment_setup": {
+        "started_at": "2026-08-11T17:55:54.272023Z",
+        "finished_at": "2026-08-11T17:56:00.720054Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-08-11T17:56:00.720152Z",
+        "finished_at": "2026-08-11T17:56:00.720224Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-08-11T17:56:00.720317Z",
+        "finished_at": "2026-08-11T17:56:00.796506Z"
+    },
+    "verifier": null,
+    "step_results": null
+}

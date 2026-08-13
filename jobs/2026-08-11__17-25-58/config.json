@@ -1,0 +1,18 @@
+{
+    "jobs_dir": "/Users/chris/harbor-custom-agent/jobs",
+    "agents": [
+        {
+            "name": "agent:SimpleAgent",
+            "kwargs": {
+                "model": "qwen3-8b:q4_k",
+                "backend": "http",
+                "base_url": "http://localhost:11434/v1"
+            }
+        }
+    ],
+    "tasks": [
+        {
+            "path": "/Users/chris/harbor-custom-agent/hello-world"
+        }
+    ]
+}

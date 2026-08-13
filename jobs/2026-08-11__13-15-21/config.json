@@ -1,0 +1,18 @@
+{
+    "jobs_dir": "/Users/chris/harbor-custom-agent/jobs",
+    "agents": [
+        {
+            "name": "agent:SimpleAgent",
+            "kwargs": {
+                "model": "llama3.2",
+                "backend": "cli",
+                "cli_command": "apfel --code -s {system} {instruction}"
+            }
+        }
+    ],
+    "tasks": [
+        {
+            "path": "/Users/chris/harbor-custom-agent/hello-world"
+        }
+    ]
+}

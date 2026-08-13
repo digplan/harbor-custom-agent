@@ -1,0 +1,11 @@
+{
+    "task": {
+        "path": "hello-world"
+    },
+    "trial_name": "hello-world__N7BhSkh",
+    "trials_dir": "jobs/2026-08-11__12-55-54",
+    "agent": {
+        "name": "agent:SimpleAgent"
+    },
+    "job_id": "80e18215-3181-49aa-b790-b56ce04e9269"
+}

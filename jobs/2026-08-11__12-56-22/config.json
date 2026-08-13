@@ -1,0 +1,12 @@
+{
+    "agents": [
+        {
+            "name": "agent:SimpleAgent"
+        }
+    ],
+    "tasks": [
+        {
+            "path": "hello-world"
+        }
+    ]
+}

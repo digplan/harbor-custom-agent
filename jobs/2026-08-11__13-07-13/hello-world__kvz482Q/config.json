@@ -1,0 +1,14 @@
+{
+    "task": {
+        "path": "hello-world"
+    },
+    "trial_name": "hello-world__kvz482Q",
+    "trials_dir": "jobs/2026-08-11__13-07-13",
+    "agent": {
+        "name": "agent:SimpleAgent",
+        "kwargs": {
+            "model": "qwen3-8b:q4_k"
+        }
+    },
+    "job_id": "a0c56709-9375-46fa-900f-1d92b727b1a3"
+}
