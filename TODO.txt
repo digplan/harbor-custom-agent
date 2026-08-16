@@ -1,0 +1,1 @@
+make profiles that are stored as folders in ~/.agent that contain everything the agent uses AGENTS.md MEMORY.md logs and endpoint and model
